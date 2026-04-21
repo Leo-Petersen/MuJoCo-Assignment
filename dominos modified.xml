@@ -5,8 +5,8 @@
   </option>
 
   <worldbody>
-    <light pos="2 0 6" diffuse="1 1 1"/>
-    <geom type="plane" size="10 10 .01" pos="2 0 1e-6"/>
+    <light pos="5 0 10" diffuse="1 1 1"/>
+    <geom type="plane" size="20 20 .01" pos="5 0 1e-6"/>
 
     <!-- starter: tilted 10 deg, same size as domino 1 -->
     <body pos="-.15 0 .089" euler="0 10 0">
@@ -54,6 +54,24 @@
     <body pos="2.265 0 1.014">
       <freejoint/>
       <geom type="box" size=".091 .501 1.014" density="360"/>
+    </body>
+
+    <!-- domino 8: scale 17.1x, full height 3.041 m, gap = 50% of domino 7 height -->
+    <body pos="3.507 0 1.521">
+      <freejoint/>
+      <geom type="box" size=".137 .752 1.521" density="360"/>
+    </body>
+
+    <!-- domino 9: scale 25.6x, full height 4.562 m, gap = 50% of domino 8 height -->
+    <body pos="5.369 0 2.281">
+      <freejoint/>
+      <geom type="box" size=".205 1.128 2.281" density="360"/>
+    </body>
+
+    <!-- domino 10: scale 38.4x, full height 6.843 m, gap = 50% of domino 9 height -->
+    <body pos="8.163 0 3.422">
+      <freejoint/>
+      <geom type="box" size=".308 1.692 3.422" density="360"/>
     </body>
 
   </worldbody>
